@@ -177,16 +177,46 @@
     
 }
 
-.projects .overlay-img:hover {
-    transform: translateY(-10px);
-}
-
-
 
 .projects h2 {
     text-align: center;
     margin-bottom: 30px;
 }
+
+.projects .overlay-img {
+    position: relative;
+}
+
+.projects .overlay-img:hover .overlay-hover {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(81, 248, 81, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .5s ease-out;
+}
+
+.github-logo .fa{
+    text-align: center;
+    color: black;
+    display: none;
+}
+
+.github-logo .fa:hover {
+    color: green;
+}
+
+.projects .overlay-img:hover .github-logo .fa{
+    display: inline-block;
+}
+
+
+
 
 .list-projects {
     display: grid;
@@ -195,6 +225,8 @@
     justify-items: center;
     align-items: center;
 }
+
+
 
 #contacts {
     background: black;
