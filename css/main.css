@@ -355,6 +355,11 @@ footer li {
 }
 
 @media (min-width: 965px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
 
     .contact-flex {
         display: flex;
@@ -372,6 +377,7 @@ footer li {
     .about-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        
     }
     
     .about-content img {
