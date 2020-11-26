@@ -328,6 +328,13 @@ footer li {
     }
 }
 
+@media (min-width: 300px) {
+    .header .showcase {
+        text-align: center;
+    }
+}
+
+
 @media (min-width: 500px) {
     body {
         font-size: 18px;
