@@ -23,7 +23,7 @@
 }
 
 .overlay {
-    background: rgb(0, 0, 0,0.8);
+    background: rgb(0, 0, 0);
     height: 100vh;
 }
 
@@ -108,6 +108,9 @@
     height: 200px;
     line-height: 1.5em;
     background: black;
+    -webkit-box-shadow: 10px 10px 49px -25px rgba(255,255,255,1);
+    -moz-box-shadow: 10px 10px 49px -25px rgba(255,255,255,1);
+    box-shadow: 10px 10px 49px -25px rgba(255,255,255,1);
    
 }
 
@@ -136,7 +139,6 @@
 
 .about {
     padding: 4em 0;
-
 }
 
 .about h2 {
@@ -220,10 +222,12 @@
 
 .list-projects {
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, auto);
     justify-items: center;
-    align-items: center;
+}
+
+.list-projects .box-5 {
+    grid-column: 1/3;
 }
 
 
@@ -325,6 +329,19 @@ footer li {
     100% {
         color: rgb(81, 248, 81);
         
+    }
+}
+
+@media (max-width: 400px) {
+    
+    .list-projects {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .list-projects .box-5 {
+        grid-column: 1/1;
     }
 }
 
